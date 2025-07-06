@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+body{
+    font-family: "Montserrat", sans-serif ;
+    transition: 300ms;
+}
+
+/* nav section */
+
+/* nav section end */
+
+/* card section */
+.product-price{
+    @apply text-gray-400 text-lg font-semibold dark:text-neutral-400;
+}
+.product-name{
+    @apply text-gray-600 text-xl font-bold dark:text-neutral-300;
+}
+.btn-love-border{
+    @apply w-[20%] font-semibold  border rounded-xl flex justify-center items-center p-2 dark:text-gray-600;
+}
+.love-icon{
+    @apply size-10 hover:fill-red-400 duration-150 dark:text-gray-400;
+}
+.btn-add-to-cart {
+    @apply text-white w-5/12 font-semibold text-sm bg-green-400 hover:bg-green-500 duration-150 rounded-xl p-2 dark:text-gray-800;
+}
+.btn-detail{
+    @apply text-white w-5/12 font-semibold text-sm bg-blue-600 hover:bg-blue-700 duration-150 rounded-xl p-2 dark:text-gray-800;
+}
+
+/* card section end */
